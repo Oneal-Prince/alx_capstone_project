@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router";
 
 
 
@@ -57,7 +58,10 @@ function Login() {
      
       <div className="flex gap-6 mx-auto p-8">
         <div className={action==="Login" ? "bt1 gray":"bt1"} onClick={() =>{setAction("Sign up")}}>Sign Up</div>
+        <Link to="/Editor">
         <div className={action==="Sign up" ? "bt2 gray" :"bt2"} onClick={() =>{setAction("Login")}}>Login</div>
+        </Link>
+        
       </div>
     </div>
    );
