@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import EditorRunner from "../components/EditorRunner";
 
 
 
@@ -69,7 +70,7 @@ export default function Editor() {
         </section>
 
         <section className="col-span-1 flex flex-col gap-2">
-          {/*<EditorRunner html={html} css={css} js={js} externalResources={[]} />*/}
+          <EditorRunner html={html} css={css} js={js} externalResources={[]} />
         </section>
       </main>
     </div>
